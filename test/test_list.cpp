@@ -1,7 +1,6 @@
 #include "lisp_test.h"
 
 TEST_F(LispTest, DISABLED_ListsAreNotSelfEvaliating) {
-    ExpectRuntimeError("()");
     ExpectRuntimeError("(1)");
     ExpectRuntimeError("(1 2 3)");
 
